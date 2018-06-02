@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Candy Collector!</title>
+	<link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class ="row">
+	<div class="col-lg-12"> <p class="text-center"> CANDY COLLECTOR </p></div>
+	</div>
+	<div class ="row">
+		<div class="col-lg-12" id="yellow_bg">
+			<p id="gameRules"> <span class="glyphicon glyphicon-ice-lolly"></span> You will be given a random number at start of the game. </p>
+			<p id="gameRules"> <span class="glyphicon glyphicon-ice-lolly"></span> There are four candies below. By clicking on a candy you will add a specific amount of points to your total score. </p>
+			<p id="gameRules"> <span class="glyphicon glyphicon-ice-lolly"></span> You win the game by matching your total score to random number, you lose the game if your total score goes above random number. </p>
+			<p id="gameRules"> <span class="glyphicon glyphicon-ice-lolly"></span> The valus of each crystal is hidden from you until you click it. </p>
+			<p id="gameRules"> <span class="glyphicon glyphicon-ice-lolly"></span> Each time when the game starts, the game will change the values of each candy</p>
+		</div>
+	</div>
+	<div class ="row">
+	<div class="col-lg-6"><p>&nbspMatch the number: <span id="randNum"></span></p></div>
+	<div class="col-lg-3"> <p class="text-left">Wins: <span id="win">0</span></p></div>
+	<div class="col-lg-3"> <p class="text-left"> Losses: <span id="lose">0</span></p></div>
+	</div>
+	<div class ="row" >
+	<div class="col-sm-3"></div>
+	<div class="col-sm-9">
+	<img src="images/candy1.png" id="candy1" class="center">
+	<img src="images/candy2.png" id="candy2" class="center">	
+	<img src="images/candy3.png" id="candy3" class="center">
+	<img src="images/candy4.png" id="candy4" class="center">
+	</div>
+	</div>
+	<div class ="row">
+	<div class="col-lg-4"><p>&nbspYour score is: <span id="userNum"></span></p></div>
+	</div>
+	<script type="text/javascript" src="javascript/game.js"></script>
+</body>
+</html>
